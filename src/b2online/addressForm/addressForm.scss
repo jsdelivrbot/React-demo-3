@@ -1,0 +1,43 @@
+@import '../../1_base_style/variable';
+@import '~foundation-sites/scss/foundation';
+
+#AddressModal {
+  padding: 2em 3em;
+  .info-title {
+    font-size: 0.9rem;
+    line-height: rem-calc(39);
+    span {
+      color: $b2red;
+    }
+  }
+}
+
+#addressForm {
+  background-color: $white;
+  border: 1px solid $light-gray;
+  padding: 1rem;
+  #addressTable {
+
+  }
+  a {margin: 0;}
+  #AddNewAddress {
+    width: 100%;
+    max-width: 40rem;
+    label {
+      font-size: 1rem;
+      line-height: 2.5;
+      text-align: right;
+      span {
+        color: $b2red;
+      }
+    }
+  }
+  #submitWrap {
+    label[for=terChe] {
+      text-align: center;
+      margin-top: 2rem;
+    }
+  }
+
+  input[type='text'] {font-size: 0.9rem;}
+}

@@ -1,0 +1,218 @@
+@import '../../../1_base_style/variable.scss';
+@import '~foundation-sites/scss/foundation';
+
+
+#PageSelltwo {
+  .input-group {
+    margin-bottom: 0 !important;
+  }
+
+  #city {
+    font-size:0.8rem;
+    width: 200px;
+    margin:0px;
+    height: 2rem;
+  }
+
+  .row-wrapper {
+    padding-top: 1rem;
+    border-top: rem-calc(3) solid $b2red;
+    background-color: $light-gray;
+    .callout {
+      border: none;
+      padding: 0.5em 0.8em;
+      background-color: $primary;
+      .title {
+        font-weight: 600;
+        color: $white;
+      }
+    }
+    .btn {
+      width: 40%;
+      margin: auto;
+      .next {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+    }
+    table {
+      width: 90%;
+      margin: 0 auto 1rem;
+      background-color: transparent;
+      border-collapse: separate;
+      thead, tfoot, tbody {
+        border: 0;
+        background-color: transparent;
+      }
+      thead,tfoot {
+        background: transparent;
+        th {padding: 0;}
+        td {padding: 0.35rem 0.4rem 0.4rem;font-weight: 400;}
+      }
+      tbody {
+          tr {
+            &:nth-child(even) {
+              background-color: transparent;
+            }
+          }
+          width: 100%;
+        }
+        th {
+          // padding: 0.35rem 0.4rem 0.4rem;
+          font-size: 0.9rem;
+          text-align: right;
+          text-transform: capitalize;
+          width: 20%;
+          font-weight: 600;
+          span {
+            color: $b2red;
+            font-size: 0.8rem;
+            padding: 0 0.3em;
+          }
+        }
+        td {
+          .react-div {
+            width: 30rem;
+            button {
+              margin-bottom: 0.5rem;
+            }
+          }
+
+          // padding: 0.35rem 0.4rem 0.4rem;
+          font-size: 0.9rem;
+          text-align: left;
+          padding-left: 1rem;
+          .shippingFeeReactContainer {
+            border: 1px solid $medium-gray;
+            margin: 0 !important;
+
+          }
+          #shippingTemp {
+            font-size: 0.8rem;
+            height: 2rem;
+            margin-bottom: 0;
+          }
+          #shipFeeTable {
+            width: 100%;
+            margin-bottom: 0;
+            thead {
+              #shipArea {width: 70%}
+              #shipFee {width: 15%}
+              #extraFee {width: 15%}
+              th {
+                font-size: 0.6rem;
+                text-align: left;
+                padding: 0.5rem 0.625rem 0 0.6rem;
+              }
+            }
+            tbody {
+              tr {
+                &:nth-child(even) {
+                  background-color: $medium-gray;
+                }
+                &:nth-child(odd) {
+                  background-color: lighten($light-gray,5%);
+                }
+              }
+              td {
+                padding: 0.3rem 0.6rem;
+                font-size: 0.9rem;
+                text-align: left;
+                text-transform: capitalize;
+              }
+            }
+          }
+        }
+        [type='file'], [type='checkbox'], [type='radio'] {
+          margin: 0;
+        }
+        [type='text'], [type='password'], [type='date'], [type='datetime'], [type='datetime-local'], [type='month'], [type='week'], [type='email'], [type='number'], [type='search'], [type='tel'], [type='time'], [type='url'], [type='color'], textarea {
+          margin: 0;
+          padding: 0.3em 0.5em;
+          height: auto;
+          font-size: 0.9rem;
+        }
+      }
+    }
+}
+
+
+#PageSelltwo .listBox {
+  margin-top: 1rem;
+  ul {
+    border: 1px solid #d7d7d7;
+    background: $white;
+    height: 44rem;
+    overflow-y: scroll;
+
+    li {
+      padding: 0.5rem;
+    }
+  }
+}
+
+#PageSelltwo #chosCateForm li:after {
+  content: ">";
+  float: right;
+}
+
+#PageSelltwo #chosCateForm li.leaf:after {
+  content: "";
+  float: right;
+}
+
+#PageSelltwo #chosCateForm li:hover {
+  background: #ebebeb;
+  cursor: pointer;
+  outline: 1px solid #d7d7d7;
+}
+
+#PageSelltwo .li-selected {
+  background: $b2red !important;
+  color: $white;
+  outline: 1px solid #d7d7d7;
+}
+
+#PageSelltwo #startListing {
+
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#shippingTemplateModal {
+
+  table {
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+    font-size: 0.9rem;
+
+    tr {
+      height: 2rem;
+
+      th {
+        padding: 0.2rem;
+      }
+
+      td {
+        height: 1.5rem;
+        padding: 0.2rem;
+
+        button {
+          margin-top: 0;
+        }
+      }
+
+      input {
+        margin-bottom: 0;
+        height: 2rem;
+      }
+    }
+
+
+  }
+
+  #add_del button {
+    text-decoration: underline;
+  }
+
+}
