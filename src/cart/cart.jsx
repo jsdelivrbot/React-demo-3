@@ -169,7 +169,7 @@ var CartTable = React.createClass({
             }
         }
 
-        //更新DB
+        //update DB
         $.ajax({
             url: '/cart/'+cartItem.id_,
             type: 'POST',
@@ -194,7 +194,7 @@ var CartTable = React.createClass({
                     var newItems = ReactAddonsUpdate(this.state.items, {
                         [key]: {$splice: [[i, 1]]}
                     });
-                    //如果本店铺空了
+                    //
                     if(newItems[key].length == 0)
                     {
                         delete newItems[key];
@@ -209,7 +209,7 @@ var CartTable = React.createClass({
     handleUserCheckedStore: function(store_id) {
         var new_checked = !this.calcStoreChecked(store_id);
         var newItems = this.state.items;
-        //该店铺下所有item toggle checked
+        //all item toggle checked
         for(var i=0;i<newItems[store_id].length;i++)
         {
             if(newItems[store_id][i].checked != new_checked)
@@ -257,7 +257,7 @@ var CartTable = React.createClass({
         var newItems = this.state.items;
 
         for(var key in newItems) {
-            //所有item toggle checked
+            //all item toggle checked
             for(var i=0;i<newItems[key].length;i++)
             {
                 if(newItems[key][i].checked != new_checked)
@@ -325,7 +325,7 @@ var CartTable = React.createClass({
             }
         };
 
-        //更新DB
+        //update DB
         $.ajax({
             url: '/cart/'+idArray.join(),
             type: 'POST',
